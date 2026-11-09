@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussly| Home</title>
+
+    <!-- local css file-->
+    <link rel="stylesheet" href="styels.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!--tailwind & daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- color styles-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'nav-border-stork': 'rgba(3, 7, 18, 0.1)',
+                        'nav-icon-fill': 'rgba(18, 19, 45, 0.03)',
+                        'nav-btn-color': '#797DFC',
+                        'nav-btn-home-color': '#BABABA',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="">
+        <!-- navbar -->
+        <div class="navbar bg-base-100">
+            `
+            <div class="navbar-start items-center">
+                <a class="normal-case text-xl md:text-3xl font-black">DisCussLy</a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost m-1 lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Edit</a></li>
+                        <li><a>Add</a></li>
+                        <li><a>Report</a></li>
+                    </ul>
+                </div>
+
+                <div class="gap-3 hidden lg:flex items-center">
+                    <button class="btn btn-circle p-4 border-nav-border-stork bg-nav-btn-home-color" title="Home">
+                        <img src="images/icons/home.png" alt="Home">
+                    </button>
+                    <button class="btn btn-circle p-4 border-nav-border-stork bg-nav-icon-fil" title="Edit">
+                        <img src="images/icons/Edit.png" alt="Edit">
+                    </button>
+                    <button class="btn btn-circle p-4 border-nav-border-stork bg-nav-icon-fil" title="Add">
+                        <img src="images/icons/Add.png" alt="Add">
+                    </button>
+                    <button class="btn btn-circle p-4 border-nav-border-stork bg-nav-icon-fil" title="Report">
+                        <img src="images/icons/Report.png" alt="Report">
+                    </button>
+                    <button
+                        class="btn flex items-center justify-center px-8 py-0 rounded-full bg-nav-btn-color font-bold text- text-white normal-case">Sign In
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="indicator">
+            <span class="badge badge-xs badge-success indicator-item"></span>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
