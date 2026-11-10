@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discussly| Home</title>
+    <title>Discussly | Home</title>
 
     <!-- local css file-->
     <link rel="stylesheet" href="styels.css">
@@ -25,11 +25,19 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
                         'nav-border-stork': 'rgba(3, 7, 18, 0.1)',
                         'nav-icon-fill': 'rgba(18, 19, 45, 0.03)',
                         'nav-btn-color': '#797DFC',
                         'nav-btn-home-color': '#BABABA',
+                        'hero-bg-color': 'rgba(18, 19, 45, 1)',
+                        'title-from-color': 'rgba(121, 125, 252, 1)',
+                        'title-to-color': 'rgba(121, 125, 252, 0.1)',
+                        'input-text-color': 'rgba(3, 7, 18, 0.5)',
+                        'black-text-color': 'rgba(18, 19, 45, 0.8)',
+                        'header-color': '#12132D',
+                        'description-color': 'rgba(18, 19, 45, 0.6)',
+                        
+
                     }
                 }
             }
@@ -38,10 +46,9 @@
 </head>
 
 <body>
-    <header class="">
+    <header class="mulish-normal mx-4 mb-24">
         <!-- navbar -->
         <div class="navbar bg-base-100">
-            `
             <div class="navbar-start items-center">
                 <a class="normal-case text-xl md:text-3xl font-black">DisCussLy</a>
             </div>
@@ -64,28 +71,72 @@
                     </ul>
                 </div>
 
-                <div class="gap-3 hidden lg:flex items-center">
-                    <button class="btn btn-circle p-4 border-nav-border-stork bg-nav-btn-home-color" title="Home">
-                        <img src="images/icons/home.png" alt="Home">
-                    </button>
-                    <button class="btn btn-circle p-4 border-nav-border-stork bg-nav-icon-fil" title="Edit">
-                        <img src="images/icons/Edit.png" alt="Edit">
-                    </button>
-                    <button class="btn btn-circle p-4 border-nav-border-stork bg-nav-icon-fil" title="Add">
-                        <img src="images/icons/Add.png" alt="Add">
-                    </button>
-                    <button class="btn btn-circle p-4 border-nav-border-stork bg-nav-icon-fil" title="Report">
-                        <img src="images/icons/Report.png" alt="Report">
-                    </button>
+                <div class="hidden lg:flex items-center gap-6">
+                    <div class="gap-3">
+                        <button class="btn btn-circle p-4 border-nav-border-stork bg-nav-btn-home-color" title="Home">
+                            <img src="images/icons/home.png" alt="Home">
+                        </button>
+                        <button class="btn btn-circle p-4 border-nav-border-stork bg-nav-icon-fil" title="Edit">
+                            <img src="images/icons/Edit.png" alt="Edit">
+                        </button>
+                        <button class="btn btn-circle p-4 border-nav-border-stork bg-nav-icon-fil" title="Add">
+                            <img src="images/icons/Add.png" alt="Add">
+                        </button>
+                        <button class="btn btn-circle p-4 border-nav-border-stork bg-nav-icon-fil" title="Report">
+                            <img src="images/icons/Report.png" alt="Report">
+                        </button>
+                    </div>
                     <button
                         class="btn flex items-center justify-center px-8 py-0 rounded-full bg-nav-btn-color font-bold text- text-white normal-case">Sign In
                     </button>
                 </div>
             </div>
         </div>
+
+        <!-- Hero section  -->
+        <section
+            class="container mx-auto lg:my-12 rounded-[32px] bg-[url('images/bgbanner.png')] md:h-[550px] bg-hero-bg-color bg-contain bg-no-repeat bg-bottom px-24 py-16 md:p-24 flex justify-around items-center lg:flex-row flex-col gap-5">
+            <!-- left part container -->
+            <div class="max-w-xl">
+                <h2 class="font-black text-6xl text-white mb-5">Welcome to the <span
+                        class="bg-gradient-to-r from-title-from-color to-title-to-color  bg-clip-text text-transparent text-5xl">DisCussLy</span>
+                    Forum</h2>
+                <p class="text-xl font-medium text-white max-w-md mb-8">Share your favorite opinion and win and wp forum coffee mug!</p>
+                <div class="relative max-w-sm flex justify-end items-center w-full">
+                    <input type="text" placeholder="Search here anything"
+                        class="input rounded-full w-full max-w-sm text-input-text-color text-sm md:text-base px-3 md:px-5 md:py-7 outline-none" />
+                    <button
+                        class="btn flex items-center justify-center px-4 md:px-7 md:py-2 rounded-full bg-nav-btn-color font-bold text-base md:text-xl  text-white normal-case border-none absolute md:mr-1 ">Search</button>
+                </div>
+            </div>
+            <!-- right part container -->
+            <div class="p-4 md:p-12 rounded-[32px] bg-white text-xl md:text-2xl font-medium text-black-text-color min-w-max md:min-w-96 md:space-y-6 space-y-4 absolute top-[650px] md:static md:top-0">
+                <div class="flex justify-between items-center gap-4 md:gap-0">
+                <p>Registered Users</p>
+                <p>01</p>
+                </div>
+                <div class="flex justify-between items-center ">
+                <p>Forum</p>
+                <p>05</p>
+                </div>
+                <div class="flex justify-between items-center ">
+                <p>Topics</p>
+                <p>01</p>
+                </div>
+                <div class="flex justify-between items-center ">
+                <p>Replies</p>
+                <p>01</p>
+                </div>
+            </div>
+        </section>
     </header>
-    <main>
-        <div class="indicator">
+    <main class="mx-4">
+        <!-- Discuss section -->
+         <section class="text-center">
+            <h2>Let’s Discuss</h2>
+
+         </section>
+        <div class="indicator hidden">
             <span class="badge badge-xs badge-success indicator-item"></span>
         </div>
     </main>
