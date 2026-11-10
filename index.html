@@ -36,7 +36,12 @@
                         'black-text-color': 'rgba(18, 19, 45, 0.8)',
                         'header-color': '#12132D',
                         'description-color': 'rgba(18, 19, 45, 0.6)',
-                        
+                        'talk-card-bg-color': 'rgba(243, 243, 245, 1)',
+                        'talk-card-border-color': 'rgba(18, 19, 45, 0.25)',
+                        'indicator-green-color': '#10B981',
+                        'indicator-red-color': '#FF3434',
+
+
 
                     }
                 }
@@ -46,7 +51,7 @@
 </head>
 
 <body>
-    <header class="mulish-normal mx-4 mb-24">
+    <header class="mulish-normal mx-4 mb-72 md:mb-24">
         <!-- navbar -->
         <div class="navbar bg-base-100">
             <div class="navbar-start items-center">
@@ -87,7 +92,8 @@
                         </button>
                     </div>
                     <button
-                        class="btn flex items-center justify-center px-8 py-0 rounded-full bg-nav-btn-color font-bold text- text-white normal-case">Sign In
+                        class="btn flex items-center justify-center px-8 py-0 rounded-full bg-nav-btn-color font-bold text- text-white normal-case">Sign
+                        In
                     </button>
                 </div>
             </div>
@@ -101,7 +107,8 @@
                 <h2 class="font-black text-6xl text-white mb-5">Welcome to the <span
                         class="bg-gradient-to-r from-title-from-color to-title-to-color  bg-clip-text text-transparent text-5xl">DisCussLy</span>
                     Forum</h2>
-                <p class="text-xl font-medium text-white max-w-md mb-8">Share your favorite opinion and win and wp forum coffee mug!</p>
+                <p class="text-xl font-medium text-white max-w-md mb-8">Share your favorite opinion and win and wp forum
+                    coffee mug!</p>
                 <div class="relative max-w-sm flex justify-end items-center w-full">
                     <input type="text" placeholder="Search here anything"
                         class="input rounded-full w-full max-w-sm text-input-text-color text-sm md:text-base px-3 md:px-5 md:py-7 outline-none" />
@@ -110,35 +117,165 @@
                 </div>
             </div>
             <!-- right part container -->
-            <div class="p-4 md:p-12 rounded-[32px] bg-white text-xl md:text-2xl font-medium text-black-text-color min-w-max md:min-w-96 md:space-y-6 space-y-4 absolute top-[650px] md:static md:top-0">
+            <div
+                class="p-4 md:p-12 rounded-[32px] bg-white text-xl md:text-2xl font-medium text-black-text-color min-w-max md:min-w-96 md:space-y-6 space-y-4 absolute top-[650px] md:static md:top-0">
                 <div class="flex justify-between items-center gap-4 md:gap-0">
-                <p>Registered Users</p>
-                <p>01</p>
+                    <p>Registered Users</p>
+                    <p>01</p>
                 </div>
                 <div class="flex justify-between items-center ">
-                <p>Forum</p>
-                <p>05</p>
+                    <p>Forum</p>
+                    <p>05</p>
                 </div>
                 <div class="flex justify-between items-center ">
-                <p>Topics</p>
-                <p>01</p>
+                    <p>Topics</p>
+                    <p>01</p>
                 </div>
                 <div class="flex justify-between items-center ">
-                <p>Replies</p>
-                <p>01</p>
+                    <p>Replies</p>
+                    <p>01</p>
                 </div>
             </div>
         </section>
     </header>
     <main class="mx-4">
         <!-- Discuss section -->
-         <section class="text-center">
-            <h2>Let’s Discuss</h2>
+        <section class="container text-center mx-auto">
+            <h2 class="mulish-normal text-4xl font-black text-header-color mb-6">Let’s Discuss</h2>
+            <p class="text-description-color max-w-2xl mx-auto inter-normal text-lg mb-12 ">Yes, you can run unit tests
+                and view the results directly within the app. The integrated testing features allow for a streamlined .
+            </p>
 
-         </section>
-        <div class="indicator hidden">
-            <span class="badge badge-xs badge-success indicator-item"></span>
-        </div>
+            <!-- card container -->
+            <div class="flex flex-col md:flex-row gap-6 justify-around  md:items-start">
+                <!-- left part -->
+                <div id="card-container" class="space-y-6">
+                    <!-- card 1 -->
+                    <div class=" p-10 bg-talk-card-bg-color rounded-3xl text-left flex gap-5 flex-col md:flex-row">
+                        <!-- left part -->
+                        <div class="indicator">
+                            <img src="images/icons/Report.png" alt="" class="w-20 h-20">
+                            <span class="badge badge-xs bg-indicator-green-color indicator-item"></span>
+                        </div>
+
+                        <!-- right part -->
+                        <div>
+                            <!-- categories & author container-->
+                            <div class="flex gap-5 text-sm font-medium inter-normal text-black-text-color mb-3">
+                                <p id="category">#Music</p>
+                                <p>Author: <span id="autor">Awiad Hossain</span></p>
+                            </div>
+                            <h3 class="text-header-color font-bold text-xl mulish-normal mb-4">10 Kids Unaware of Their
+                                Halloween Costume</h3>
+                            <p class="text-base inter-normal text-description-color mb-5">It’s one thing to subject
+                                yourself
+                                to ha Hallow een costume mishap because, hey that’s your prerogative</p>
+                            <!-- icons container -->
+                            <div
+                                class="border-dashed border-t-2 border-talk-card-border-color pt-5 flex justify-between items-center">
+                                <!-- left part -->
+                                <div class="text-base inter-normal text-description-color flex gap-6">
+                                    <!-- massage -->
+                                    <div class="flex items-center gap-2">
+                                        <img src="images/icons/massage-icon.png" alt="massage" class=" w-4 md:w-5">
+                                        <p class="text-base">560</p>
+                                    </div>
+                                    <!-- views  -->
+                                    <div class="flex items-center gap-2">
+                                        <img src="images/icons/views-icon.png" alt="views" class=" w-4 md:w-5">
+                                        <p class="text-base">1,568</p>
+                                    </div>
+                                    <!-- duration -->
+                                    <div class="flex items-center gap-2">
+                                        <img src="images/icons/duration-icon.png" alt="duration" class=" w-4 md:w-5">
+                                        <p class="text-base">5 min</p>
+                                    </div>
+                                </div>
+                                <!-- right part -->
+                                <div>
+                                    <button class="btn border-none rounded-full"><img src="images/icons/email.png"
+                                            alt="Email"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class=" p-10 bg-talk-card-bg-color rounded-3xl text-left flex gap-5">
+                        <!-- left part -->
+                        <div class="indicator">
+                            <img src="images/icons/Report.png" alt="" class="w-20 h-20">
+                            <span class="badge badge-xs bg-indicator-green-color indicator-item"></span>
+                        </div>
+
+                        <!-- right part -->
+                        <div>
+                            <!-- categories & author container-->
+                            <div class="flex gap-5 text-sm font-medium inter-normal text-black-text-color mb-3">
+                                <p id="category">#Music</p>
+                                <p>Author: <span id="autor">Awiad Hossain</span></p>
+                            </div>
+                            <h3 class="text-header-color font-bold text-xl mulish-normal mb-4">10 Kids Unaware of Their
+                                Halloween Costume</h3>
+                            <p class="text-base inter-normal text-description-color mb-5">It’s one thing to subject
+                                yourself
+                                to ha Hallow een costume mishap because, hey that’s your prerogative</p>
+                            <!-- icons container -->
+                            <div
+                                class="border-dashed border-t-2 border-talk-card-border-color pt-5 flex justify-between items-center">
+                                <!-- left part -->
+                                <div class="text-base inter-normal text-description-color flex gap-6">
+                                    <!-- massage -->
+                                    <div class="flex items-center gap-2">
+                                        <img src="images/icons/massage-icon.png" alt="massage">
+                                        <p class="text-base">560</p>
+                                    </div>
+                                    <!-- views  -->
+                                    <div class="flex items-center gap-2">
+                                        <img src="images/icons/views-icon.png" alt="views">
+                                        <p class="text-base">1,568</p>
+                                    </div>
+                                    <!-- duration -->
+                                    <div class="flex items-center gap-2">
+                                        <img src="images/icons/duration-icon.png" alt="duration">
+                                        <p class="text-base">5 min</p>
+                                    </div>
+                                </div>
+                                <!-- right part -->
+                                <div>
+                                    <button class="btn border-none rounded-full"><img src="images/icons/email.png"
+                                            alt="Email"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right part -->
+                <div class="p-3 md:p-6 bg-talk-card-bg-color rounded-3xl min-w-0 md:min-w-96 space-y-5">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="text-xl font-bold text-header-color mulish-normal ">Title</h4>
+                        <div class="flex md:gap-2 text-base inter-normal">
+                            <img src="images/icons/mark_icon.png" alt="" class="w-5">
+                            <p class="">Mark as read (<span>4</span>)</p>
+                        </div>
+                    </div>
+                    <!-- dynamic card -->
+                    <div class="text-base text-header-color font-semibold bg-white rounded-3xl flex justify-between p-2 md:p-4 m-0 text-left">
+                        <h4 class="max-w-56 min-w-0">10 Kids Unaware of Their Halloween Costume</h4>
+                        <!-- views  -->
+                        <div class="flex items-center md:gap-2">
+                            <img src="images/icons/views-icon.png" alt="views">
+                            <p class="text-base">1,568</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
     </main>
     <footer>
 
