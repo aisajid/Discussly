@@ -44,11 +44,6 @@
                         'header-color-zero': 'rgba(18, 19, 45, 0)',
                         'header-color-one': 'rgba(18, 19, 45, 0.1)',
                         'footer-description-color': 'rgba(18, 19, 45, 0.7)',
-
-
-
-
-
                     }
                 }
             }
@@ -107,7 +102,7 @@
 
         <!-- Hero section  -->
         <section
-            class="container mx-auto lg:my-12 rounded-[32px] bg-[url('images/bgbanner.png')] md:h-[550px] bg-hero-bg-color bg-contain bg-no-repeat bg-bottom px-24 py-16 md:p-24 flex justify-around items-center lg:flex-row flex-col gap-5">
+            class="container] mx-auto lg:my-12 rounded-[32px] bg-[url('images/bgbanner.png')] md:h-[550px] bg-hero-bg-color bg-contain bg-no-repeat bg-bottom px-24 py-16 md:p-24 flex justify-around items-center lg:flex-row flex-col gap-5">
             <!-- left part container -->
             <div class="max-w-xl">
                 <h2 class="font-black text-6xl text-white mb-5">Welcome to the <span
@@ -116,9 +111,9 @@
                 <p class="text-xl font-medium text-white max-w-md mb-8">Share your favorite opinion and win and wp forum
                     coffee mug!</p>
                 <div class="relative max-w-sm flex justify-end items-center w-full">
-                    <input type="text" placeholder="Search here anything"
+                    <input type="text" id="search-input-field" placeholder="Search here anything"
                         class="input rounded-full w-full max-w-sm text-input-text-color text-sm md:text-base px-3 md:px-5 md:py-7 outline-none" />
-                    <button
+                    <button onclick="handleSearch()"
                         class="btn flex items-center justify-center px-4 md:px-7 md:py-2 rounded-full bg-nav-btn-color font-bold text-base md:text-xl  text-white normal-case border-none absolute md:mr-1 ">Search</button>
                 </div>
             </div>
@@ -154,165 +149,82 @@
 
             <!-- card container -->
             <div class="flex flex-col md:flex-row gap-6 justify-around  md:items-start">
-                <!-- left part -->
-                <div id="card-container" class="space-y-6">
-                    <!-- card 1 -->
-                    <div class=" p-10 bg-talk-card-bg-color rounded-3xl text-left flex gap-5 flex-col md:flex-row">
-                        <!-- left part -->
-                        <div class="indicator">
-                            <img src="images/icons/Report.png" alt="" class="w-20 h-20">
-                            <span class="badge badge-xs bg-indicator-green-color indicator-item"></span>
-                        </div>
+                <div class="flex flex-col justify-center items-center">
+                    <!-- left part -->
+                    <div id="card-container" class="space-y-6">
+                        <!-- card 1 -->
 
-                        <!-- right part -->
-                        <div>
-                            <!-- categories & author container-->
-                            <div class="flex gap-5 text-sm font-medium inter-normal text-black-text-color mb-3">
-                                <p id="category">#Music</p>
-                                <p>Author: <span id="autor">Awiad Hossain</span></p>
-                            </div>
-                            <h3 class="text-header-color font-bold text-xl mulish-normal mb-4">10 Kids Unaware of Their
-                                Halloween Costume</h3>
-                            <p class="text-base inter-normal text-description-color mb-5">It’s one thing to subject
-                                yourself
-                                to ha Hallow een costume mishap because, hey that’s your prerogative</p>
-                            <!-- icons container -->
-                            <div
-                                class="border-dashed border-t-2 border-talk-card-border-color pt-5 flex justify-between items-center">
-                                <!-- left part -->
-                                <div class="text-base inter-normal text-description-color flex gap-6">
-                                    <!-- massage -->
-                                    <div class="flex items-center gap-2">
-                                        <img src="images/icons/massage-icon.png" alt="massage" class=" w-4 md:w-5">
-                                        <p class="text-base">560</p>
-                                    </div>
-                                    <!-- views  -->
-                                    <div class="flex items-center gap-2">
-                                        <img src="images/icons/views-icon.png" alt="views" class=" w-4 md:w-5">
-                                        <p class="text-base">1,568</p>
-                                    </div>
-                                    <!-- duration -->
-                                    <div class="flex items-center gap-2">
-                                        <img src="images/icons/duration-icon.png" alt="duration" class=" w-4 md:w-5">
-                                        <p class="text-base">5 min</p>
-                                    </div>
-                                </div>
-                                <!-- right part -->
-                                <div>
-                                    <button class="btn border-none rounded-full"><img src="images/icons/email.png"
-                                            alt="Email"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- card 2 -->
-                    <div class=" p-10 bg-talk-card-bg-color rounded-3xl text-left flex gap-5">
-                        <!-- left part -->
-                        <div class="indicator">
-                            <img src="images/icons/Report.png" alt="" class="w-20 h-20">
-                            <span class="badge badge-xs bg-indicator-green-color indicator-item"></span>
-                        </div>
+                       
 
-                        <!-- right part -->
-                        <div>
-                            <!-- categories & author container-->
-                            <div class="flex gap-5 text-sm font-medium inter-normal text-black-text-color mb-3">
-                                <p id="category">#Music</p>
-                                <p>Author: <span id="autor">Awiad Hossain</span></p>
-                            </div>
-                            <h3 class="text-header-color font-bold text-xl mulish-normal mb-4">10 Kids Unaware of Their
-                                Halloween Costume</h3>
-                            <p class="text-base inter-normal text-description-color mb-5">It’s one thing to subject
-                                yourself
-                                to ha Hallow een costume mishap because, hey that’s your prerogative</p>
-                            <!-- icons container -->
-                            <div
-                                class="border-dashed border-t-2 border-talk-card-border-color pt-5 flex justify-between items-center">
-                                <!-- left part -->
-                                <div class="text-base inter-normal text-description-color flex gap-6">
-                                    <!-- massage -->
-                                    <div class="flex items-center gap-2">
-                                        <img src="images/icons/massage-icon.png" alt="massage">
-                                        <p class="text-base">560</p>
-                                    </div>
-                                    <!-- views  -->
-                                    <div class="flex items-center gap-2">
-                                        <img src="images/icons/views-icon.png" alt="views">
-                                        <p class="text-base">1,568</p>
-                                    </div>
-                                    <!-- duration -->
-                                    <div class="flex items-center gap-2">
-                                        <img src="images/icons/duration-icon.png" alt="duration">
-                                        <p class="text-base">5 min</p>
-                                    </div>
-                                </div>
-                                <!-- right part -->
-                                <div>
-                                    <button class="btn border-none rounded-full"><img src="images/icons/email.png"
-                                            alt="Email"></button>
-                                </div>
-                            </div>
-                        </div>
                     </div>
+                    <div >
+                        <span id="loading-spinner-field" class="loading loading-bars loading-lg hidden mt-10 mb-10"></span>
+                    </div>
+                    <button onclick="handleShowAll()" id="isShowAll-Field" class="btn px-8 py-0 rounded-full bg-nav-btn-color font-bold text- text-white normal-case text-center mt-11 hidden">Show
+                        All</button>
+                    </button>
+
                 </div>
+
                 <!-- right part -->
-                <div class="p-3 md:p-6 bg-talk-card-bg-color rounded-3xl min-w-0 md:min-w-96 space-y-5">
+                <div id="right-card-container"
+                    class="p-3 md:p-6 bg-talk-card-bg-color rounded-3xl min-w-0 md:min-w-96 space-y-5">
                     <div class="flex items-center justify-between mb-4">
                         <h4 class="text-xl font-bold text-header-color mulish-normal ">Title</h4>
                         <div class="flex md:gap-2 text-base inter-normal">
                             <img src="images/icons/mark_icon.png" alt="" class="w-5">
-                            <p class="">Mark as read (<span>4</span>)</p>
+                            <p class="">Mark as read (<span id="mark-count-field">0</span>)</p>
                         </div>
                     </div>
                     <!-- dynamic card -->
-                    <div class="text-base text-header-color font-semibold bg-white rounded-3xl flex justify-between p-2 md:p-4 m-0 text-left">
-                        <h4 class="max-w-56 min-w-0">10 Kids Unaware of Their Halloween Costume</h4>
-                        <!-- views  -->
-                        <div class="flex items-center md:gap-2">
-                            <img src="images/icons/views-icon.png" alt="views">
-                            <p class="text-base">1,568</p>
-                        </div>
-                    </div>
+
 
                 </div>
 
             </div>
 
         </section>
-        
+
         <!-- join our forum section -->
-         <section class="container mx-auto p-10 md:p-24 mulish-normal bg-header-color rounded-[32px] flex justify-between items-center relative flex-col md:flex-row mb-24">
+        <section
+            class="container mx-auto p-10 md:p-24 mulish-normal bg-header-color rounded-[32px] flex justify-between items-center relative flex-col md:flex-row mb-24">
             <!-- left part -->
-             <div>
+            <div>
                 <h3 class="text-white mb-4 font-black text-4xl">Join Our Forum</h3>
                 <p class="text-lg text-white mb-8 max-w-2xl">
-                    Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. 
+                    Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view
+                    the results directly within the app.
                 </p>
-                <button class="btn flex items-center justify-center px-4 md:px-10 md:py-2 rounded-full bg-nav-btn-color font-bold text-base md:text-xl  text-white normal-case border-none">Register Now</button>
-             </div>
-             <!-- right part -->
-              <div class="static md:absolute md:right-6 md:bottom-0 ">
+                <button
+                    class="btn flex items-center justify-center px-4 md:px-10 md:py-2 rounded-full bg-nav-btn-color font-bold text-base md:text-xl  text-white normal-case border-none">Register
+                    Now</button>
+            </div>
+            <!-- right part -->
+            <div class="static md:absolute md:right-6 md:bottom-0 ">
                 <img src="images/joinforum.png" alt="" class="">
-              </div>
-         </section>
+            </div>
+        </section>
 
-         <!-- latest post section-->
-          <section class="constainer text-center mx-auto mb-24">
+        <!-- latest post section-->
+        <section class="constainer text-center mx-auto mb-24">
             <h2 class="mulish-normal text-4xl font-black text-header-color mb-6">Latest Posts</h2>
-            <p class="text-description-color max-w-2xl mx-auto inter-normal text-lg mb-12">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+            <p class="text-description-color max-w-2xl mx-auto inter-normal text-lg mb-12">Yes, you can run unit tests
+                and view the results directly within the app. The integrated testing features allow for a streamlined .
             </p>
 
             <!-- card container -->
-             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-left">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-left">
                 <!-- card 1 -->
-                 <div class="p-6 rounded-3xl border-2 border-latest-card-border-stroke gap-2 mulish-normal">
+                <div class="p-6 rounded-3xl border-2 border-latest-card-border-stroke gap-2 mulish-normal">
                     <img src="images/Rectangle 4.png" alt="" class="w-full h-48 mb-6">
                     <div class="flex text-description-color text-base mb-3 gap-2">
                         <img src="images/icons/data-icon.png" alt="Date" class="w-6">
                         <p>29 January 2024</p>
                     </div>
-                    <h3 class="text-lg font-extrabold text-header-color mb-3">What will a mars habitat force that impact in our daily life!!!</h3>
-                    <p class="text-description-color text-base mb-4">Yes, you can run unit tests and view the results directly within the app. </p>
+                    <h3 class="text-lg font-extrabold text-header-color mb-3">What will a mars habitat force that impact
+                        in our daily life!!!</h3>
+                    <p class="text-description-color text-base mb-4">Yes, you can run unit tests and view the results
+                        directly within the app. </p>
 
                     <div class="flex gap-4">
                         <img src="images/icons/Report.png" alt="" class="w-11 h-11 rounded-full">
@@ -322,16 +234,18 @@
                         </div>
                     </div>
 
-                 </div>
+                </div>
                 <!-- card 2 -->
-                 <div class="p-6 rounded-3xl border-2 border-latest-card-border-stroke gap-2 mulish-normal">
+                <div class="p-6 rounded-3xl border-2 border-latest-card-border-stroke gap-2 mulish-normal">
                     <img src="images/Rectangle 4.png" alt="" class="w-full h-48 mb-6">
                     <div class="flex text-description-color text-base mb-3 gap-2">
                         <img src="images/icons/data-icon.png" alt="Date" class="w-6">
                         <p>29 January 2024</p>
                     </div>
-                    <h3 class="text-lg font-extrabold text-header-color mb-3">What will a mars habitat force that impact in our daily life!!!</h3>
-                    <p class="text-description-color text-base mb-4">Yes, you can run unit tests and view the results directly within the app. </p>
+                    <h3 class="text-lg font-extrabold text-header-color mb-3">What will a mars habitat force that impact
+                        in our daily life!!!</h3>
+                    <p class="text-description-color text-base mb-4">Yes, you can run unit tests and view the results
+                        directly within the app. </p>
 
                     <div class="flex gap-4">
                         <img src="images/icons/Report.png" alt="" class="w-11 h-11 rounded-full">
@@ -341,16 +255,18 @@
                         </div>
                     </div>
 
-                 </div>
+                </div>
                 <!-- card 3 -->
-                 <div class="p-6 rounded-3xl border-2 border-latest-card-border-stroke gap-2 mulish-normal">
+                <div class="p-6 rounded-3xl border-2 border-latest-card-border-stroke gap-2 mulish-normal">
                     <img src="images/Rectangle 4.png" alt="" class="w-full h-48 mb-6">
                     <div class="flex text-description-color text-base mb-3 gap-2">
                         <img src="images/icons/data-icon.png" alt="Date" class="w-6">
                         <p>29 January 2024</p>
                     </div>
-                    <h3 class="text-lg font-extrabold text-header-color mb-3">What will a mars habitat force that impact in our daily life!!!</h3>
-                    <p class="text-description-color text-base mb-4">Yes, you can run unit tests and view the results directly within the app. </p>
+                    <h3 class="text-lg font-extrabold text-header-color mb-3">What will a mars habitat force that impact
+                        in our daily life!!!</h3>
+                    <p class="text-description-color text-base mb-4">Yes, you can run unit tests and view the results
+                        directly within the app. </p>
 
                     <div class="flex gap-4">
                         <img src="images/icons/Report.png" alt="" class="w-11 h-11 rounded-full">
@@ -360,17 +276,20 @@
                         </div>
                     </div>
 
-                 </div>
-             </div>
-          </section>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="bg-gradient-to-t from-header-color-zero to-header-color-one py-20 px-6 md:px-36 md:py-24  text-center">
+    <footer
+        class="bg-gradient-to-t from-header-color-zero to-header-color-one py-20 px-6 md:px-36 md:py-24  text-center">
         <h2 class="text-header-color text-3xl font-black mb-4">DisCussLy</h2>
-        <p class="max-w-2xl text-footer-description-color mb-8 text-base mx-auto">Join a community where every opinion matters. Share your thoughts, ask questions, discover new perspectives, and connect with people who share your interests.</p>
+        <p class="max-w-2xl text-footer-description-color mb-8 text-base mx-auto">Join a community where every opinion
+            matters. Share your thoughts, ask questions, discover new perspectives, and connect with people who share
+            your interests.</p>
         <div class="flex gap-8 justify-center pb-12 border-b-2 mb-8">
             <a href="#"><img src="images/icons/logo-twitter.png" alt=""></a>
 
-           <a href="#"><img src="images/icons/fb.png" alt="facebook"></a>
+            <a href="#"><img src="images/icons/fb.png" alt="facebook"></a>
 
             <a href="#"><img src="images/icons/insta.png" alt="instagram"></a>
 
@@ -380,6 +299,7 @@
 
     </footer>
 
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
